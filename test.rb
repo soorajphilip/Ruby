@@ -1,1 +1,2 @@
-puts a = 'sooraj'.reverse
+name = gets
+puts "good morning #{name}"
