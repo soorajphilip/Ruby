@@ -1,6 +1,3 @@
-#unless statement
-age = 20
-unless age <17
-  puts "get a job"
-
-end
+age = gets.chop.to_i
+response = age < 17 ? "You still have your entire life ahead of you." : "You're all grown up."
+puts response
