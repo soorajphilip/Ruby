@@ -1,3 +1,10 @@
-age = gets.chop.to_i
-response = age < 17 ? "You still have your entire life ahead of you." : "You're all grown up."
-puts response
+a = gets.chop.to_i
+ans = case a
+when 5
+  "ans is 5"
+when 6
+  "ans is 6"
+else
+  "a is neither 5 nor 6"
+end
+puts ans
