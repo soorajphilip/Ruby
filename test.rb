@@ -1,7 +1,6 @@
-def add_value(&add)
-  add.call
-end
-
-add_value do
-  puts "plus operator"
+number = 0
+loop do
+  puts number
+  number += 1
+  break if number == 10
 end
