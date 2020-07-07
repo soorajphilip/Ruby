@@ -1,7 +1,3 @@
-names = ['Bob', 'Joe', 'Steve', 'Janice', 'Susan', 'Helen']
-x = 1
+friends = ["one","two","three","four","five"]
 
-names.each do |name|
-  puts "#{x}.#{name}"
-  x += 1
-end
+friends.reject { |friend| friend == "two"  }
