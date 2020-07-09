@@ -1,5 +1,13 @@
-words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
-          'fowl', 'veil', 'wolf', 'diet', 'vile', 'edit', 'tide',
-          'flow', 'neon']
+def number(num)
+  x = num.to_s
+  y = x.split("")
+  puts y.kind_of?String
 
-words.group_by{ |w| w.chars.sort }.uniq
+  # for i in y
+  #   for j in y
+  #     return i+j
+  #   end
+  # end
+end
+
+puts number(10)

@@ -1,3 +1,13 @@
-friends = ["one","two","three","four","five"]
+require 'pry'
 
-friends.reject { |friend| friend == "two"  }
+def yell_greeting(string)
+  name = string
+
+  name = name.upcase
+  binding.pry
+  greeting = "WASSAP, #{name}!"
+
+  puts greeting
+end
+
+yell_greeting("bob")
