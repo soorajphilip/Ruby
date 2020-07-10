@@ -1,13 +1,12 @@
-require 'pry'
-
-def yell_greeting(string)
-  name = string
-
-  name = name.upcase
-  binding.pry
-  greeting = "WASSAP, #{name}!"
-
-  puts greeting
+def mul(str,x)
+  number = 1
+  while number < x+1
+    puts str * number
+    number += 1
+  end
 end
 
-yell_greeting("bob")
+x = gets.chomp.to_i
+str = gets.chomp.to_s
+
+mul(str,x)
