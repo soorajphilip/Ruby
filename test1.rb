@@ -1,3 +1,2 @@
-number = 10
-name = "s"
-puts name * number
+name = "sooraj"
+puts name[0,2]
