@@ -1,18 +1,29 @@
-class Child
-  @@children = 0
-  def initialize(name, birth_year)
-    @name = name
-    @birth_year = birth_year
-    @@children +=1
-  end
+#class inheritance
 
-  def self.children_added
-    return @@children
+class Chef # => superclass
+  def make_chicken
+    puts "the chef makes chicken"
   end
-
+  def make_salad
+    puts "the chef makes salad"
+  end
+  def make_sp
+    puts "the chef makes fish fry"
+  end
 end
 
-naomi = Child.new("Naomi", 2006)
-bertha = Child.new("Bertha", 2008)
+class ItalianChef < Chef #=> ItalianChef is a sub class
+  def make_sp
+    puts "bbq"
+  end
+  def make_pasta
+    puts "the chef makes pasta"
+  end
+end
 
-puts Child.children_added # => 2
+
+chef = Chef.new()
+chef.make_sp
+
+italian_chef = ItalianChef.new()
+italian_chef.make_pasta
