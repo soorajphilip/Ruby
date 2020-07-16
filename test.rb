@@ -60,3 +60,20 @@
 # student2 = Student.new("ryan",23,5.6)
 #
 # puts student2.has_honors
+
+# # => modules
+#
+# module Tools
+#
+#   def sayhi(name)
+#     puts "hello, #{name}"
+#   end
+#   def saybye(name)
+#     puts "bye,#{name}"
+#   end
+# end
+#
+# include Tools
+#
+# Tools.sayhi("sooraj")
+# Tools.saybye("sooraj")
